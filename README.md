@@ -1,23 +1,17 @@
 ![logo](assets/logo_apiblueprint.png)
 
 # API Blueprint
-### API Design for Humans
+### Design de APIs para Humanos
 
 [![slack](https://apiblueprint-slack.herokuapp.com/badge.svg)](https://apiblueprint-slack.herokuapp.com/)
 
-A powerful high-level API design language for web APIs.
+Uma poderosa linguagem de design de APIs de alto nível para APIs web.
 
-API Blueprint is simple and accessible to everybody involved in the API design
-lifecycle. Its syntax is concise yet expressive.
+API Blueprint é simples e acessível para todo mundo envolvido no ciclo de vida do design de API. Sua sintaxe é concisa e expressiva.
 
-With API Blueprint you can quickly prototype and model APIs to be created or
-describe already deployed mission-critical APIs. From a [car][tesla] to the
-largest Content Distribution Network (CDN) in the world.
+Com API BLueprint você pode rapidamente prototipar e modelas APIs a serem criadas ou descrever as APIs de missão crítica já instaladas. De um [carro] [tesla] à maior rede de distribuição de conteúdo (CDN) no mundo.
 
-The API Blueprint is built to encourage dialogue and collaboration between
-project stakeholders, developers and customers at any point in the API
-lifecycle. At the same time, the API Blueprint [tools][] provide the support to
-achieve the goals be it API development, governance or delivery.
+A API Blueprint é feita para encorajar diálogo e colaboração entre os stakeholders, desenvolvedores e clientes no ponto em qualquer ponto do ciclo de vida da API. Ao mesmo tempo, as [ferramentas][] da API Bluenprint provêem o suporte para alcançar os objetivos, seja desenvolvimento da API, governança ou entrega.
 
 ![API Blueprint Lifecycle](assets/lifecycle.png)
 
@@ -25,22 +19,21 @@ achieve the goals be it API development, governance or delivery.
 [tools]: http://apiblueprint.org/tools.html
 
 ## Open Source
-API Blueprint is completely open sourced under the MIT license.
+API Blueprint tem seu código totalmente aberto sob a licença MIT.
+Qualquer [contribuição][contribute] é altamente apreciada.
 Any [contribution][contribute] is highly appreciated.
 
 [contribute]: #contribute
 
-## At home on GitHub
-API Blueprint language is recognized by GitHub. You can
-[search for API Blueprint][search] or use the `apib` language identifier for
-[syntax highlighting][gfm].
+## Em casa no GitHub
+A linguagem API Blueprint é reconhecida pelo Github. Você pode [pesquisar por API Blueprint][search] ou usar linguagem `apib` para [syntax highlighting][gfm].
 
 [search]: https://github.com/search?utf8=%E2%9C%93&q=language%3A%22API+Blueprint%22&type=Repositories&ref=advsearch&l=API+Blueprint&l=
 
 [gfm]: https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting
 
-## Getting started
-All it takes to describe an endpoint of your API is to write:
+## Começando
+Tudo para descrever um endpoint da sua API é escrever:
 
 ```apib
 # GET /message
@@ -49,13 +42,12 @@ All it takes to describe an endpoint of your API is to write:
         Hello World!
 ```
 
-in your favorite plain text editor.
+em seus editor de texto plano favorito.
 
-With this blueprint you can already get a [mock][], [documentation][] and
-[test][] for your API before you even start coding.
+Com esse blueprint você já pode criar um [mock][], [documentação][documentation] e [testar][test] da sua API antes mesmo de começar a codificar.
 
-To learn more about the API Blueprint syntax jump directly to the
-[API Blueprint Tutorial][tutorial] or take a look at some [examples][].
+Para aprender mais sobre a sintaxe API Blueprint, pule direto para o [Tutorial][tutorial] ou dê
+uma olhada em alguns [exemplos][exemples].
 
 [mock]: http://docs.apibstart.apiary.io/#reference/0/message/get?console=1
 [documentation]: http://docs.apibstart.apiary.io
@@ -64,17 +56,17 @@ To learn more about the API Blueprint syntax jump directly to the
 [examples]: https://github.com/apiaryio/api-blueprint/tree/master/examples
 
 ## Media Type
-The media type for API Blueprint is `text/vnd.apiblueprint`.
+O media type para API Blueprint é `text/vnd.apiblueprint`.
 
-## Learn more
+## Veja mais
 - [Tutorial][tutorial]
-- [Advanced Tutorial][advanced_tutorial]
-- [Examples][examples]
+- [Tutorial avançado][advanced_tutorial]
+- [Exemplos][examples]
 - [Wiki][wiki]
-- [Glossary of Terms][glossary]
-- [Specification][specification]
-- [List of Tools][tools]
-- [Developers][developers]
+- [Glossário][glossary]
+- [Especificação][specification]
+- [Lista de ferramentas][tools]
+- [Desenvolvedores][developers]
 
 [advanced_tutorial]: Advanced%20Tutorial.md
 [glossary]: Glossary%20of%20Terms.md
@@ -82,38 +74,31 @@ The media type for API Blueprint is `text/vnd.apiblueprint`.
 [wiki]: https://github.com/apiaryio/api-blueprint/wiki
 [developers]: https://apiblueprint.org/developers.html
 
-## Future
-The plans for API Blueprint are completely tracked on GitHub – see the
-[API Blueprint Roadmap][roadmap].
+## Futuro
+Os planos para o API Blueprint são completamente monitarados no GitHub - veja o [Roadmap do API Blueprint][roadmap].
 
 [roadmap]: https://github.com/apiaryio/api-blueprint/wiki/Roadmap
 
-## Developers
-Building tools for API Blueprint is possible thanks to its machine-friendly face
-provided by API Blueprint parser.
+## Desenvolvedores
+Criando ferramentas para API Blueprint é possível graças à sua interface machine-friendly provida pelo parser do API Blueprint.
 
-If you are interested in building tools for API Blueprint check out the
-[Developing tools for API Blueprint][developers].
+Se você ficou interessados em criar ferramentas para API Blueprint, dê uma olhada em [Desenvolvendo ferramentas para API Blueprint][developers].
 
-## Contribute
-Feel free report problems or propose new ideas using the API Blueprint GitHub
-[issues][].
+## Contribuir
+Fique à vontade para reportar problemas ou propor novas ideias usando as Github [issues] do API Blueprint.
 
-We use an RFC process for proposing any substantial changes to the API
-Blueprint language, specification and/or parsers.
+Nós usamos um processo de RFC para propor qualquer mudança substancial na linguagem do API Blueprint, na especificação ou no parser.
 
-If you would like to propose a change, please consult our
-[RFC process][rfc].
+Se você vai propor alguma mudança, por favor consulte nosso [RFC process][rfc].
 
 [issues]: https://github.com/apiaryio/api-blueprint/issues
 [rfc]: https://github.com/apiaryio/api-blueprint-rfcs
 
-## Get in Touch
+## Entre em contato
 - [@apiblueprint](https://twitter.com/apiblueprint)
 - [Slack](https://apiblueprint-slack.herokuapp.com/)
 - [Stack Overflow](http://stackoverflow.com/questions/tagged/apiblueprint)
 - [GitHub Issues][issues]
 
-## License
-MIT License. See the [LICENSE](https://github.com/apiaryio/api-blueprint/blob/master/LICENSE)
-file.
+## Licença
+Licença MIT. Veja o arquivo da [LICENÇA](https://github.com/apiaryio/api-blueprint/blob/master/LICENSE).
