@@ -1,123 +1,113 @@
-# API Blueprint Glossary of Terms
+# Glossário da API Blueprint
 
-A brief list of terms as used in the [API Blueprint](http://apiblueprint.org) context.
+Uma breve lista de termos usandos no contexto da [API Blueprint](http://apiblueprint.org).
 
-## Glossary
+## Glossário
 
 <a name="def-action"></a>
 ### Action
-An **HTTP transaction** (a request-response transaction).
+Uma **transação HTTP** (uma transação requisição-resposta).
 
-Actions are specified by an [HTTP request method](#def-method) within a [resource](#def-resource).
+Actions são especificados por um [método de requisição HTTP](#def-method) dentro de um [recurso](#def-resource).
 
 <a name="def-api"></a>
 ### API
-An **HTTP Application programming interface**. Might refer to an API
-description. See [**API Blueprint**](#def-api-blueprint).
+Uma **HTTP Application programming interface** deve consultar uma descrição de API. Veja [**API Blueprint**](#def-api-blueprint).
 
 <a name="def-api-blueprint"></a>
 ### API Blueprint
-The **API Blueprint language**. A format used to describe API in an API blueprint file.
+A **linguagem API Blueprint**. Um formato para descrever API em um arquivo de API blueprint.
 
 <a name="def-asset"></a>
 ### Asset
-**Atomic data**. Most often representing one resource representation in the form of message-body or its validation schema.
+**Dado Atômico**. Na maioria das vezes descreve uma representação de recurso na forma de corpo de mensagem ou seu esquema de validação.
 
 <a name="def-attribute"></a>
-### Attribute
-Based on the context, attribute (property) of a message-body data structure, or
-attribute of a resource, or an input attribute of a transition –
-[Action](#def-action).
+### Atributo
+Baseado no contexto, atributo (ou propriedade) da estrutura de um corpo de mensagem, ou atributo de um recurso ou um atributo de entrada de uma transição (input) – [Action](#def-action).
 
 <a name="def-blueprint"></a>
 ### Blueprint
-An **API description**. A **blueprint file** (or a set of files) that describes an API using the API Blueprint language.
+Uma **descrição de API**. Um **arquivo de blueprint** (ou conjunto de arquivos) que descrevem uma API usando a linguagem API Blueprint.
 
 <a name="def-data-structure"></a>
-### Data Structure
-A particular data organization, or a description of it. In API Blueprint, data
-structures and their [Attributes](#def-attribute) are described using the
-Markdown Syntax for Object Notation – [MSON][].
+### Estrutura de dados
+Uma organização de dados particular, ou uma descrição disso. Em API Blueprint, estruturas de dados e seus [Atributos](#def-attribute) são descritos usando sintaxe Markdown para Notação de objetos – [MSON][].
 
 <a name="def-entity"></a>
-### Entity
-[**Entity**](http://www.w3.org/Protocols/rfc2616/rfc2616-sec7.html) being transferred in a [payload](#def-payload).
+### Entitidade
+[**Entidade**](http://www.w3.org/Protocols/rfc2616/rfc2616-sec7.html) sendo transferida em um [payload](#def-payload).
 
 <a name="def-header"></a>
-### Header
-A [**message-header**](#def-message-header).
+### Header (Cabeçalho)
+Um [**cabealho de mensagem**](#def-message-header).
 
 <a name="def-method"></a>
-### Method
-An [**HTTP Request Method**](http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods).
+### Método
+Um [**Método de requisição HTTP**](http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods).
 
 <a name="def-message"></a>
-### Message
-An **HTTP transaction message**.
+### Mensagem
+Uma **mensagem de transação HTTP**.
 
 <a name="def-message-body"></a>
-### Message body
-An [**asset**](#def-asset) representing [**HTTP transaction message body**](http://en.wikipedia.org/wiki/HTTP_body_data).
+### Corpo da mensagem
+Um [**asset**](#def-asset) representando [**um corpo de mensagem de transação HTTP**](http://en.wikipedia.org/wiki/HTTP_body_data).
 
 <a name="def-message-header"></a>
-### Message header
-An [**asset**](#def-asset) representing [**HTTP transaction message header**](http://en.wikipedia.org/wiki/List_of_HTTP_header_fields).
+### Cabeçalho de mensagem
+Um [**asset**](#def-asset) representando [**um cabeçalho de mensagem de transação HTTP**](http://en.wikipedia.org/wiki/List_of_HTTP_header_fields).
+
 <a name="def-parameter"></a>
-### Parameter
-An [**URI template**](#def-uri-template) **variable**.
+### Parâmetro
+Uma **variável** de [**modelo de URI**](#def-uri-template).
 
 <a name="def-payload"></a>
 ### Payload
-An **HTTP transaction message** including its **discussion** and any additional [**assets**](#def-asset) such as entity-body validation schema.
+Uma **mensagem de transação HTTP** incluindo dua **discussão** e qualquer [**assets**](#def-asset) adicional como entidade-corpo de esquema de validação.
 
-A payload may have an **identifier** – a string for a [request](#def-request)
-payload or an 
-[HTTP status code](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes) for a
-[response](#def-response) payload.
+
+Um payload pode ter um **identificador** – uma string para o payload da [requisição](#def-request)
+ou um [código de status HTTP](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes) para um
+payload de [response](#def-response).
 
 <a name="def-property"></a>
-### Property
-An [entity](#def-entity) field (attribute).
+### Propriedade
+Um campo [entitidade](#def-entity) (atributo).
 
 <a name="def-request"></a>
-### Request
-A [**payload**](#def-payload) containing one specific [HTTP Request](http://www.w3.org/TR/di-gloss/#def-http-request).
+### Requisição
+Um [**payload**](#def-payload) contento uma [requisição HTTP](http://www.w3.org/TR/di-gloss/#def-http-request) específica.
 
 <a name="def-response"></a>
-### Response
-A [**payload**](#def-payload) containing one specific [HTTP Response](http://www.w3.org/TR/di-gloss/#def-http-response).
+### Resposta
+Um [**payload**](#def-payload) contento uma [resposta HTTP](http://www.w3.org/TR/di-gloss/#def-http-response) específica.
 
 <a name="def-resource"></a>
-### Resource
-An API [**resource**](http://www.w3.org/TR/di-gloss/#def-resource) specified by
-its *URI*. It can also refer to a [**set of resources**](#def-resource)
-matching one [**URI template**](#def-uri-template).
+### Recurso
+Um [**recurso**](http://www.w3.org/TR/di-gloss/#def-resource) de API especificado por uma *URI*. Isso também pode consultar um [**conjunto de recursos**](#def-resource) combinando com um [**modelo de URI**](#def-uri-template).
 
 <a name="def-resource-model"></a>
-### Resource Model
-One [**manifestation of a resource**](http://www.w3.org/TR/di-gloss/#def-resource-manifestation) in the
-form of a [payload](#def-payload). A resource model is an example
-representation of its resource. Can be referenced later in the place of a
-[payload](#def-payload).
+### Modelo de recurso
+Uma [**manifestação de um recurso**](http://www.w3.org/TR/di-gloss/#def-resource-manifestation) em forma de um [payload](#def-payload). Um modelo de recurso é um exemplo que representa esse recurso. Pode ser referenciado no lugar de um [payload](#def-payload).
 
 <a name="def-resource-set"></a>
-### Resource Set
-A set of API [**resources**](http://www.w3.org/TR/di-gloss/#def-resource). Its
-*URI* matches one specific [**URI template**](#def-uri-template).
+### Conjunto de recursos
+Um conjunto de [**recursos**](http://www.w3.org/TR/di-gloss/#def-resource) de uma API. Essa *URI* combina com um  [**modelo de URI**](#def-uri-template) específico.
 
 <a name="def-trait"></a>
 ### Trait
-A quality or characteristic of an API Blueprint SECTION.
+Uma qualidade ou característica de uma SEÇÃO de uma API Blueprint.
 
 <a name="def-schema"></a>
-### Schema
-A **validation schema** in a form of an [**asset**](#def-asset) used to validate (or describe) a [**message-body**](#def-message-body).
+### Esquema
+Um **esquema de validação** em forma de um [**asset**](#def-asset) usado para validar (ou descrever) um [**corpo de mensagem**](#def-message-body).
 
 <a name="def-uri-template"></a>
-### URI template
-A compact sequence of characters for describing a range of **Uniform Resource Identifiers** through **variable** expansion, see [**RFC 6570**](http://tools.ietf.org/html/rfc6570).
+### Modelo de URI
+Uma sequência compacta de caracteres para descrever o alcance de uma **URI (Unified Resource Idenfifiers)** por uma expansão de **variável**, veja [**RFC 6570**](http://tools.ietf.org/html/rfc6570).
 
-## Additional resources
+## Referências adicionais
 
 + [HTTP/1.1 Terminology](http://www.w3.org/Protocols/rfc2616/rfc2616-sec1.html#sec1.3)
 + [W3C Glossary of Terms for Device Independence](http://www.w3.org/TR/di-gloss)
